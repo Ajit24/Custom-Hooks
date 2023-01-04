@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import useFetch from './useFetch/useFetch';
+import Nav from './Nav/Nav';
 
 function App() {
 
@@ -14,13 +15,16 @@ function App() {
 
   return (
     <div className="App">
+      <Nav/>
+      <div>
      <h2>Custom - Hooks in React.js</h2> <hr />
-     <div>
+     
      <h1>
         {joke?.setup} : {joke?.delivery}
       </h1>
 
       <button onClick={refetch}> Refetch</button>
+
      </div>
     </div>
   );
