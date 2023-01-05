@@ -8,6 +8,10 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import { CgSun } from "react-icons/cg/";
+import { HiMoon } from "react-icons/hi";
+import { style } from "glamor";
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -51,7 +55,42 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function Nav() {
+export default function Nav(props) {
+    const theme = props.theme;
+
+    const styles = style({
+        backgroundColor: props.theme.name === "light" ? "#7CD1F7" : "#292C3F",
+
+    })
+const [currTheme, setCurrTheme] = useState(props.theme);
+
+  function changeTheme() {
+    if (currTheme === "light") {
+      props.setTheme("dark");
+      localStorage.setItem("theme", "dark");
+      setCurrTheme("dark");
+    } else {
+      props.setTheme("light");
+      localStorage.setItem("theme", "light");
+      setCurrTheme("light");
+    }
+  }
+
+  const icon =
+    props.theme.name === "dark" ? (
+      <HiMoon
+        strokeWidth={1}
+        size={20}
+        color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
+      />
+    ) : (
+      <CgSun
+        strokeWidth={1}
+        size={20}
+        color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
+      />
+    );
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -73,6 +112,9 @@ export default function Nav() {
           >
             ACT
           </Typography>
+          <button {...styles} onClick={changeTheme}>
+              {icon}
+              </button>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />

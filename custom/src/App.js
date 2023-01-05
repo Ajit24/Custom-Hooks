@@ -1,7 +1,10 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from "react";
 import './App.css';
 import useFetch from './useFetch/useFetch';
 import Nav from './Nav/Nav';
+import DarkToLight from './DarkToLight/DarkToLight';
+import { ThemeProvider } from "styled-components";
+import { themes } from "./theme";
 
 function App() {
 
@@ -13,9 +16,31 @@ function App() {
 
   if (error) console.log(error);
 
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+
   return (
     <div className="App">
       <Nav/>
+
+      <ThemeProvider theme={themes[theme]}>
+      <>
+        <GlobalStyles /> 
+        {/* <div>
+          <Main theme={themes[theme]} setTheme={setTheme} />
+          <div>
+            
+          </div>
+        </div> */}
+      </>
+    </ThemeProvider>
+
+
+
+
+
+
+      {/* <DarkToLight/> */}
+
       <div>
      <h2>Custom - Hooks in React.js</h2> <hr />
      
@@ -25,7 +50,8 @@ function App() {
 
       <button onClick={refetch}> Refetch</button>
 
-     </div>
+     </div> <hr />
+       
     </div>
   );
 }
