@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import './App.css';
 import useFetch from './useFetch/useFetch';
 import Nav from './Nav/Nav';
