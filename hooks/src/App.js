@@ -1,9 +1,11 @@
 import './App.css';
 import ClassCounter from './Components/ClassCounter';
+import HookCounterArr from './Components/HookCounterArr';
 function App() {
   return (
     <div className="App">
-     <ClassCounter/>
+     {/* <ClassCounter/> */}
+     <HookCounterArr/>
     </div>
   );
 }
