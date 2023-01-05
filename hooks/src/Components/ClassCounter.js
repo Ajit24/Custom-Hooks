@@ -7,11 +7,11 @@ const [count, setCount] = useState(initialCount);
 
   return (
     <div>
-           <div>
+           <div> <br /> <br />
         <button onClick={()=>setCount(count+1)}>count+</button>
-        <button onClick={()=>setCount(initialCount)}>RESET</button>
+        <button onClick={()=>setCount(initialCount)}>RESET</button> <br /> <br />
          <div>
-         {count}
+        count :  {count}
          </div>
       </div> 
     
