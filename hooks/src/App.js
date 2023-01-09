@@ -9,8 +9,8 @@ function App() {
     <div className="App">
      {/* <ClassCounter/> */}
      {/* <HookCounterArr/> */}
-     {/* <UseEffectOne/> */}
-     <Header/>
+     <UseEffectOne/>
+     {/* <Header/> */}
      {/* <DarkMode/> */}
          
 

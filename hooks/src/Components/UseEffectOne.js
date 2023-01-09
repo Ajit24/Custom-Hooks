@@ -11,7 +11,7 @@ useEffect(()=>{
 
   return (
     <div>
-      <h3>useEffect Hook in React.js</h3>  <hr />
+      <h3>useEffect Hook in React.js</h3> <br /> <br /> <hr />
 
       <input type="text" value={name} id="" onChange={ e => setName(e.target.value)} />
 
