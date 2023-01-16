@@ -5,6 +5,7 @@ import UseEffectOne from './Components/UseEffectOne';
 import DarkMode from './Components/DarkMode/DarkMode';
 import Header from './Components/Header/Header';
 import UseEffectFetch from './Components/UseEffectFetch';
+import PostData from './Components/PostData/PostData';
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,8 @@ function App() {
      {/* <UseEffectOne/> */}
      {/* <Header/> */}
      {/* <DarkMode/> */}
-     <UseEffectFetch/>
+     {/* <UseEffectFetch/> */}
+     <PostData/>
          
 
      
