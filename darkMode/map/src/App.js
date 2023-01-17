@@ -1,22 +1,36 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Home from './Components/Home';
+// import logo from './logo.svg';
+// import './App.css';
+// import Map from './Components/Map';
+// import LoginForm from './Components/LoginForm/LoginForm';
+
+// function App() {
+//   return (
+//     <div className="App">
+//       {/* <Map/> */}
+//       <LoginForm/>
+//     </div>
+//   );
+// }
+
+// export default App;
 
 
-class App extends Component {
-	render() {
-		return (
-			<div className="App">
-				<Router>
-					<div>
-						<Route exact path="/" component={Home} />
-					</div>
-				</Router>
-			</div>
-		);
-	}
+
+//import LoginForm from './LoginForm';
+import LoginForm from "./Components/LoginForm/LoginForm";
+
+function App() {
+  const handleLogin = (data) => {
+    // Send a request to the server for authentication
+    console.log(data);
+  };
+
+  return (
+    <div>
+      <LoginForm onSubmit={handleLogin} />
+    </div>
+  );
 }
-
 export default App;
 
-// AIzaSyAXN9QcZXsmPdZYao0EIEXXPQXpoR-62Gs
+//AIzaSyAXN9QcZXsmPdZYao0EIEXXPQXpoR-62Gs
