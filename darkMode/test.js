@@ -1,13 +1,13 @@
-var phoneNumber = "95~630242";
-var phoneNumberRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-if (phoneNumber.match(phoneNumberRegex)) {
-    console.log("valid phone number");
-} else {
-    console.log("invalid phone number");
-}
+// var phoneNumber = "95~630242";
+// var phoneNumberRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+// if (phoneNumber.match(phoneNumberRegex)) {
+//     console.log("valid phone number");
+// } else {
+//     console.log("invalid phone number");
+// }
 
 
-var num = "345365~657655";
+var num = "70a1955d5";
 var numberRegex = /^[+-]?\d+(\.\d+)?$/;
 if (numberRegex.test(num)) {
     console.log("valid number");
