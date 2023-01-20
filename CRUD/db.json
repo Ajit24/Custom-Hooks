@@ -31,16 +31,16 @@
       "id": 7
     },
     {
-      "name": "shakti",
-      "role": "Admin",
-      "salary": "700000",
-      "id": 8
-    },
-    {
       "name": "ajittt",
       "role": "SDE",
       "salary": "00000",
       "id": 9
+    },
+    {
+      "name": "santu",
+      "role": "android dev",
+      "salary": "600000",
+      "id": 10
     }
   ]
 }
