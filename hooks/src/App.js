@@ -8,6 +8,7 @@ import UseEffectFetch from './Components/UseEffectFetch';
 import PostData from './Components/PostData/PostData';
 import ApiPost from './Components/ApiPost/ApiPost';
 import CountBack from './Components/COUNTBACK/CountBack';
+import FlatList from './Components/FlatList/FlatList';
 function App() {
   return (
     <div className="App">
@@ -19,8 +20,8 @@ function App() {
      {/* <UseEffectFetch/> */}
      {/* <PostData/> */}
      {/* <ApiPost/> */}
-     <CountBack/>
-         
+     {/* <CountBack/> */}
+        <FlatList/>
 
      
 
