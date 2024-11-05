@@ -7,6 +7,7 @@ import Header from './Components/Header/Header';
 import UseEffectFetch from './Components/UseEffectFetch';
 import PostData from './Components/PostData/PostData';
 import ApiPost from './Components/ApiPost/ApiPost';
+import CountBack from './Components/COUNTBACK/CountBack';
 function App() {
   return (
     <div className="App">
@@ -17,7 +18,8 @@ function App() {
      {/* <DarkMode/> */}
      {/* <UseEffectFetch/> */}
      {/* <PostData/> */}
-     <ApiPost/>
+     {/* <ApiPost/> */}
+     <CountBack/>
          
 
      
